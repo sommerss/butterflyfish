@@ -14,7 +14,7 @@ week: 5
 
     <div style="float: left; margin: 0px 10px 10px 0px;">
         <a href="https://en.wikipedia.org/wiki/Front-end_web_development">
-            <img atl="Wikipedia Front-end" src="{{site.baseurl}}/images/html-css-js.jpeg" title=""
+            <img atl="Wikipedia Front-end" src="{{site.baseurl}}/images/strawberry.png" title=""
             width="200">
         </a>
     </div>

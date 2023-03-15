@@ -27,7 +27,7 @@ week: 5
 
                 <li> i like backend specifically .</li>
 
-                <li>i am a junior. </li>
+                <li>i like fashion . </li>
 
                 <li>my name is sabine. surprise. </li> 
             </ul>

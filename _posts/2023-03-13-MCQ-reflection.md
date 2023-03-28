@@ -36,5 +36,5 @@ answer: 1001 0100
 i picked: 1101 0100
 
 this was a reading mistake on my part. i didnt see the second 1. when there is a 0, the 1 moves over and the 0 repeats, meaning there would be the two 0s, but it couldnt go far enough to be 1101 because there is a 1 in between. 
-![]({{site.baseurl}}/binarymath.png/images)
+![]({{site.baseurl}}/images/binarymath.png)
 

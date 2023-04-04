@@ -5,9 +5,17 @@ categories: [test corrections]
 layout: post
 ---
 
+## Big Idea 2 Quiz
+
+24/25
+
+answer: 1001 0100
+i picked: 1101 0100
+
+this was a reading mistake on my part. i didnt see the second 1. when there is a 0, the 1 moves over and the 0 repeats, meaning there would be the two 0s, but it couldnt go far enough to be 1101 because there is a 1 in between. 
+![]({{site.baseurl}}/images/binarymath.png)
 
 
-## Tri 2 Final
 41/50
 
 1. Anonymous web browsing- I said the activities will not be available for monitors, but the actual answer is that their shopping cart will not be saved. Administrators are seeing the device, not the browser.
@@ -28,13 +36,5 @@ layout: post
 
 9. which algorithms run in reasonable time- i chose answer b, but the number of steps is equal to 2n so it doesnt run in reasonable time
 
-## Big Idea 2 Quiz
 
-24/25
-
-answer: 1001 0100
-i picked: 1101 0100
-
-this was a reading mistake on my part. i didnt see the second 1. when there is a 0, the 1 moves over and the 0 repeats, meaning there would be the two 0s, but it couldnt go far enough to be 1101 because there is a 1 in between. 
-![]({{site.baseurl}}/images/binarymath.png)
 

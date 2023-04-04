@@ -16,3 +16,5 @@ my favorite song is constantly changing, and although my number one listened to 
 i really like how she connects it to herself after telling the whole story. my favorite lyric is "they say she was seen on occasion, pacing the rocks staring out at the midnight sea. and in a feud with her neighbor, she stole his dog and dyed him key lime green" because it's obviously funny, but it's even more funny because it's a true story and it's great imagery. 
 
 i'd say my overall favorite album is either folklore or midnights, even though midnight has recieved a lot of hate from critics. folklore is sadder than most of her other discography and midnights is more pop oriented, but i feel like they both completely encapsulate her writing talent. 
+
+

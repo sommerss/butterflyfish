@@ -38,3 +38,14 @@ this was a reading mistake on my part. i didnt see the second 1. when there is a
 
 
 
+
+
+![]({{site.baseurl}}/images/mcqq1.png)
+
+![]({{site.baseurl}}/images/mcqq10.png)
+
+![]({{site.baseurl}}/images/mcqq22.png)
+
+
+
+

@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -127,7 +127,7 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a <strong><em>__</em></strong> language that is <strong>_</strong> into CSS, which means that <strong><strong>__</strong></strong>, which is what your web browser can read.</p>
+<h1 id="Why-SASS?">Why SASS?<a class="anchor-link" href="#Why-SASS?"> </a></h1><p>SASS is an improvement on CSS in that there are methods of abstraction. It is a stylesheet language that is compiled into CSS, which means that Sass will translate the Sass code you wrote into CSS, which is what your web browser can read.</p>
 <h1 id="SASS-vs-SCSS">SASS vs SCSS<a class="anchor-link" href="#SASS-vs-SCSS"> </a></h1><p>As you learn about Sass, you might notice something called Scss. They are basically the same thing except that Scss uses curly braces and semicolons to distinguish between lines. Sass uses indentation and newlines instead.</p>
 <p>We will be teaching the Scss syntax because it is more commonly used.</p>
 
@@ -149,7 +149,12 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><p>Take notes here</p>
+<h1 id="Nesting">Nesting<a class="anchor-link" href="#Nesting"> </a></h1><p>write styling code in a way that looks like html hierarchy- one code block goes inside another (like an if statement inside of a for loop). it can do a few things-</p>
+<ul>
+<li>control execution/flow of code</li>
+<li>make code more readable by organizing</li>
+<li>make more complex code/structure</li>
+</ul>
 
 </div>
 </div>
@@ -171,15 +176,38 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Extend/Inheritance">Extend/Inheritance<a class="anchor-link" href="#Extend/Inheritance"> </a></h1><p>What are some similarities that the buttons share? What are the differences?</p>
-<p>Take notes here</p>
+<p>.a {
+  .b {
+    color: green;
+  }</p>
+<p>.c {
+    color: blue;
+  }
+}
+nest both b and c inside a since they share that attribute</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><p>Take notes here</p>
+<h1 id="Extend/Inheritance">Extend/Inheritance<a class="anchor-link" href="#Extend/Inheritance"> </a></h1><p>What are some similarities that the buttons share? What are the differences? they all have different colors, but they are all shaped and sized the same and have the same rounded corners</p>
+<p>Take notes here</p>
+<ul>
+<li>can create placeholder class that stores code you want to reuse- like a template</li>
+<li>you are basically creating a class that inherits properties of previous classes</li>
+<li>the new class gains all of the attributes of the old class</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Mixin">Mixin<a class="anchor-link" href="#Mixin"> </a></h1><ul>
+<li>Similar to extend because it creates a template for reusing and it can use parameters to style a specific way</li>
+<li>more flexible than inheritance and avoids code duplication</li>
+</ul>
 
 </div>
 </div>
@@ -191,16 +219,48 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="nd">@mixin</span> <span class="n">color</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">size</span><span class="p">(</span><span class="err">$</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="err">$</span><span class="n">color</span><span class="p">;</span>
+  <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="err">$</span><span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">my</span><span class="o">-</span><span class="k">class</span> <span class="err">{</span>
+  <span class="nd">@include</span> <span class="n">color</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">size</span><span class="p">(</span><span class="c1">#FF5733, 20px);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><p>Take notes here</p>
+<h1 id="Function">Function<a class="anchor-link" href="#Function"> </a></h1><ul>
+<li>invert function can change between light and dark mode (takes rgb value and returns inverted value)</li>
+<li>Functions are called by specifying the function name with parenthesis. Inside the parenthesis, you can specify the arguments.</li>
+</ul>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><p>Take notes here</p>
+<h1 id="Import">Import<a class="anchor-link" href="#Import"> </a></h1><ul>
+<li>bring in code from another file</li>
+<li>you can use functionality from that code without having to have it in your own code/rewrite it if it is someone elses</li>
+<li>also lets you use same style across multiple files without having to copy and paste over and over</li>
+</ul>
 
 </div>
 </div>
@@ -217,6 +277,104 @@ window.onload = wrap_img;
 <li><p>Extra credit: Research other SASS features and blog about what you learned or add to your SASS project with any extra features not covered in this lesson. More points will be given if both are done.</p>
 </li>
 </ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="MULTIPLE-CHOICE-Qs">MULTIPLE CHOICE Qs<a class="anchor-link" href="#MULTIPLE-CHOICE-Qs"> </a></h3><ol>
+<li>b. a scripting language that has many styling operations</li>
+<li>a. They are very similar in their function, but their syntax is slightly different </li>
+<li>c. CSS takes up more bytes </li>
+<li>b. Syntactically Awesome Style Sheets</li>
+<li>d. compute</li>
+<li>b. extend </li>
+<li>b. Directive 
+### SASS CREATION WITH MIXIN
+i like gradient colors so here is a mixin thing for gradients in sass</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">Define</span> <span class="n">a</span> <span class="n">mixin</span> <span class="n">that</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">gradient</span> <span class="n">background</span>
+<span class="nd">@mixin</span> <span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="p">(</span><span class="err">$</span><span class="n">start</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">end</span><span class="o">-</span><span class="n">color</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">background</span><span class="p">:</span> <span class="n">linear</span><span class="o">-</span><span class="n">gradient</span><span class="p">(</span><span class="n">to</span> <span class="n">bottom</span><span class="p">,</span> <span class="err">$</span><span class="n">start</span><span class="o">-</span><span class="n">color</span><span class="p">,</span> <span class="err">$</span><span class="n">end</span><span class="o">-</span><span class="n">color</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Use</span> <span class="n">the</span> <span class="n">mixin</span> <span class="n">to</span> <span class="n">create</span> <span class="n">a</span> <span class="n">gradient</span> <span class="n">background</span> <span class="n">on</span> <span class="n">an</span> <span class="n">element</span>
+<span class="o">.</span><span class="n">box</span> <span class="p">{</span>
+  <span class="n">width</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">height</span><span class="p">:</span> <span class="mi">200</span><span class="n">px</span><span class="p">;</span>
+  <span class="nd">@include</span> <span class="n">gradient</span><span class="o">-</span><span class="n">background</span><span class="p">(</span><span class="c1">#ff0000, #00ff00);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="EXTRA-NOTES">EXTRA NOTES<a class="anchor-link" href="#EXTRA-NOTES"> </a></h3><p>i researched some additional features of SASS besides the ones mentioned. i picked five more even though there are a lot.</p>
+<ul>
+<li>placeholder selectors: SASS allows you to define placeholder selectors with the % symbol, which you can then use with the @extend directive to apply styles to multiple selectors at once.</li>
+<li>operators: SASS supports a number of mathematical and logical operators that you can use to manipulate values in your styles.</li>
+<li>interpolation: SASS allows you to use string interpolation with the #{} syntax to include variables or expressions in your CSS styles.</li>
+<li>media queries: SASS allows you to define media queries within the context of a selector, which makes it easier to write and manage responsive styles.</li>
+<li>source maps: SASS supports source maps, which allow you to debug your styles in the browser's developer tools and see the original SASS source code, rather than the compiled CSS code.</li>
+</ul>
+<p>so obviously i had to make a code segment using one of these... placeholder selectors was at the top, so even though it's similar to inheritance, i wrote some more button code.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">button</span> <span class="p">{</span>
+  <span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span>
+  <span class="n">padding</span><span class="p">:</span> <span class="mi">10</span><span class="n">px</span> <span class="mi">20</span><span class="n">px</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">blue</span><span class="p">;</span>
+  <span class="n">color</span><span class="p">:</span> <span class="n">white</span><span class="p">;</span>
+  <span class="n">border</span><span class="o">-</span><span class="n">radius</span><span class="p">:</span> <span class="mi">5</span><span class="n">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">submit</span><span class="o">-</span><span class="n">button</span> <span class="p">{</span>
+  <span class="nd">@extend</span> <span class="o">%</span><span class="n">button</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">.</span><span class="n">cancel</span><span class="o">-</span><span class="n">button</span> <span class="p">{</span>
+  <span class="nd">@extend</span> <span class="o">%</span><span class="n">button</span><span class="p">;</span>
+  <span class="n">background</span><span class="o">-</span><span class="n">color</span><span class="p">:</span> <span class="n">red</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>it defines common button sizing and then makes two more buttons that extend those features to them (but the cancel button is red instead as well)</p>
 
 </div>
 </div>

@@ -15,27 +15,31 @@ week: 29
 
 
 ### How a Computer Works
-> As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
+> As we have learned, a computer needs a program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided. The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+Processor: Apple M1 chip with 8-core CPU and 8-core GPU
+Processor GHz: 3.2 base speed, may vary based on task or how much my computer is heating up
+Memory: 8 GB unified
+Memory in GB: 8 GB
+Storage: 256 GB SSD
+my computer has ventura as the operating system
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
-- Output devices
-- Program File
-- Program Code
-- Processes
-- Ports
-- Data File
-- Inspect Running Code
-- Inspect Variables
+- Input devices: Input devices are hardware devices that allow users to input data and instructions into a computer system. Examples include keyboards, mice, scanners, and microphones.
+- Output devices: Output devices are hardware devices that display or produce data or information processed by a computer system. Examples include monitors, printers, and speakers.
+- Program file: A program file is a file that contains code written in a programming language, which can be executed by a computer system to perform specific tasks.
+- Program code: Program code is the set of instructions written in a programming language that define the behavior of a computer program.
+- Processes: A process is an instance of a computer program that is currently executing in memory.
+- Ports: Ports are interfaces on a computer system that allow devices to communicate with each other. Examples include USB ports, Ethernet ports, and HDMI ports.
+- Data file: A data file is a file that contains data or information, such as text, images, or video, that is stored on a computer system.
+- Inspect running code: Inspecting running code involves examining the code that is currently executing in a program. This can be useful for debugging and troubleshooting errors.
+- Inspect variables: Inspecting variables involves examining the values of variables in a computer program. This can be useful for understanding how the program is functioning and identifying errors or issues.
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+
+![Full Stack]({{site.baseurl}}/images/definition.png)
 
 
 ### The Internet
@@ -52,17 +56,23 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Bandwidth is usually measured in bits per second
 
 - Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use `traceroute` and `ping` commands from Linux Terminal.  
-    - Path 
-    - Route
-    - Computer System
-    - Computer Device
-    - Bandwidth
-    - Computer Network
+    - Path = a (a sequence of directly connected computing devices that begins at the sender and ends at the reciever)
+    - Route = e (process of finding a path from sender to reciever)
+    - Computer System = b (is a group of computing devices and programs working together for a common purpose)
+    - Computer Device = c (a physical artifact that can run a program, like computers, tablets, servers, routers, and smart sensors)
+    - Bandwidth = d (the maximum amount of data that can be sent in a fixed amount of time)
+    - Computer Network = f (a group of interconnected computing devices capable of sending or recieving data)
 
 > Watch/review College Board Daily Video 4.1.2
 
-- Complete True of False Questions
-
+- Complete True or False Questions
+1. True
+2. False
+3. False
+4. True
+5. False
+6. False
+7. True
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
     - Access to the internet depends on the ability to connect a computing device to an internet connected device.
@@ -82,6 +92,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
 
 ![Full Stack]({{site.baseurl}}/images/fullstack.png)
+
+![Full Stack]({{site.baseurl}}/images/codeprocess.png)
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -115,13 +127,16 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+The first one is fault tolerant, but the second two are not. Fault tolerance is basically when something keeps functioning despite errors or disconnection because they are multiple points of connection
+
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
-- What is naturally Distributed in Frontend/Backend archeticture?  
+- What is naturally Distributed in Frontend/Backend archeticture?  frontend is client machines and backend is more storage, so servers or cloud
 
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
+specifies command line arguments to give gunicorn application server on launch- workers is sent to 1 so it will only use single worker process
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.

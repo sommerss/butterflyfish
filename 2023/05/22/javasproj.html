@@ -257,6 +257,48 @@ window.onload = wrap_img;
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Album Web Page&quot;</span><span class="p">);</span>
+
+
+<span class="n">const</span> <span class="n">jsonText</span> <span class="o">=</span> <span class="n">document</span><span class="o">.</span><span class="n">getElementById</span><span class="p">(</span><span class="s2">&quot;jsonText&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">innerHTML</span><span class="p">;</span>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">jsonText</span><span class="p">);</span>
+<span class="n">element</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;Raw jsonText element embedded in HTML&lt;br&gt;&quot;</span><span class="p">);</span>
+<span class="n">element</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="n">jsonText</span> <span class="o">+</span> <span class="s2">&quot;&lt;br&gt;&quot;</span><span class="p">);</span>
+
+
+<span class="n">const</span> <span class="n">album</span> <span class="o">=</span> <span class="n">JSON</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">jsonText</span><span class="p">)</span><span class="o">.</span><span class="n">album</span><span class="p">;</span>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">album</span><span class="p">);</span>
+
+
+<span class="n">element</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;&lt;br&gt;Formatted data sample from jsonText &lt;br&gt;&quot;</span><span class="p">);</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">row</span> <span class="n">of</span> <span class="n">album</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">element</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">ghID</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;br&gt;&#39;</span><span class="p">);</span>
+    <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span><span class="p">,</span> <span class="n">a</span> <span class="n">new</span> <span class="n">line</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;tr&gt;&#39;</span><span class="p">)</span>
+    <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span> <span class="n">of</span> <span class="n">data</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;td&gt;&#39;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">name</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&#39;</span><span class="p">)</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;td&gt;&#39;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">tID</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&#39;</span><span class="p">)</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;td&gt;&#39;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">rID</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&#39;</span><span class="p">)</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;td&gt;&#39;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">role</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&#39;</span><span class="p">)</span>
+    <span class="o">//</span> <span class="n">tr</span> <span class="n">to</span> <span class="n">end</span> <span class="n">row</span>
+    <span class="err">$</span><span class="p">(</span><span class="s1">&#39;#album&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;&lt;/tr&gt;&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 

@@ -31,11 +31,11 @@ We had three user personas, including Angela, Tracy, and Kyle. Angela is a 17 ye
 
 Paper wireframes:
 
-!{{site.baseurl}}//images/paperwireframe1.png
+![]({{site.baseurl}}/images/paperwireframe1.png)
 
 Digital wireframes:
 
-!{{site.baseurl}}//images/digitalwireframe1.png
+![]({{site.baseurl}}/images/digitalwireframe1.png)
 
 Low fidelity prototype: 
 
@@ -50,7 +50,7 @@ Overall, users of the low fidelity prototype found it to be easily navigable and
 
 mid/high fidelity prototype:
 
-!{{site.baseurl}}//images/mhfidelity1.png
+![]({{site.baseurl}}/images/mhfidelity1.png)
 
 accessibility considerations:
 

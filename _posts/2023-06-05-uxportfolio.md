@@ -8,9 +8,12 @@ title: UX portfolio- Sabine Sommers
 ## Product Overview:
 
 Product: Homework Planner
+
 Project Duration: 2 weeks
+
 Problem(s): Many students have trouble keeping track of all of their work on top of their outside activities and need help maintaining their grades.
 Goals: Provide a way for students to have all of their school work in one place to enable them to focus better, remember all of their assignments, and subsequently be more successful in their academic and extracurricular pursuits.
+
 Role and responsibilities: Although I worked with a team for the process work at the beginning of this project, it was ultimately my job to create my own version of the prototype using our combined process work. I created, in their entirety, all of the prototypes (including, as of now, a low fidelity and mid/high fidelity prototype).
 
 ## Understand the Users
@@ -63,4 +66,7 @@ Takeaways: I took many things away from this experience. Most importantly, I too
 Next Steps:
 
 The next steps for this project is to consider fleshing it out and adding color. I need to make it more accessible for all types of users and ultimately make it into a full fledged project with all of the aspects of an app store style app; it needs to have color, font choices, and multiple language considerations. My prototype still has a long road towards being even remotely close to being ready for publication, including interviewing more people about their perspectives. 
+
+
+
 
